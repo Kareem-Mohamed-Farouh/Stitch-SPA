@@ -1,0 +1,57 @@
+.animat {
+  /* width: 100px; */
+  /* rotate: 180deg; */
+  animation: animat infinite 6s ease;
+  /* position: absolute; */
+}
+
+@keyframes animat {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.animat1 {
+  /* width: 100px; */
+  /* rotate: 180deg; */
+  animation: animat1 infinite 6s ease;
+  /* position: absolute; */
+}
+
+@keyframes animat1 {
+  0% {
+    transform: rotate(-360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lemonada {
+  color: #000;
+}
+
+.karaz {
+}
+.otchina {
+  color: #000;
+}
+
+.penaple {
+  color: #000;
+}
+.banana {
+  color: #000;
+}
+.donates {
+  color: #000;
+}

@@ -1,0 +1,52 @@
+.navbar-brand {
+  color: rgb(17, 18, 17);
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 800;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(17, 17, 17),
+    rgb(11, 246, 227),
+    rgb(5, 209, 250),
+    rgb(253, 36, 113)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+.nav-link {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 208, 255),
+    rgb(35, 234, 245),
+    rgb(249, 7, 212),
+    rgb(253, 36, 113)
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+nav {
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid rgb(253, 36, 113);
+}
+
+nav .nav-link.active {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 208, 255),
+    rgb(35, 234, 245),
+    rgb(249, 7, 212),
+    rgb(253, 36, 113)
+  );
+  background-clip: text;
+  color: transparent;
+}

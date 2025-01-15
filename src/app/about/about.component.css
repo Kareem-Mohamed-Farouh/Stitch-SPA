@@ -1,0 +1,30 @@
+.star::after {
+  content: "";
+  height: 4px;
+  width: 40%;
+  background-color: rgb(16, 238, 249);
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.star::before {
+  content: "";
+  height: 4px;
+  width: 40%;
+  background-color: rgb(16, 238, 249);
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.star img {
+  width: 100px;
+}
+.pict .img-about {
+  cursor: pointer;
+
+  transition: all 1s;
+}
+.pict .img-about:hover {
+  transform: scale(1.1);
+}

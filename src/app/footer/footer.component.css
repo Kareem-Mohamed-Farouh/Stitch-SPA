@@ -1,0 +1,45 @@
+footer {
+  /* background-color: rgb(26, 188, 156); */
+  /* background-color: rgb(44, 62, 80); */
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+.footericon a {
+  color: white;
+  border: white solid 1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+.footericon a:hover {
+  color: rgb(253, 36, 113);
+  border: rgb(0, 247, 255) solid 1px;
+  background-color: rgb(179, 237, 240);
+}
+
+.cliip {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 208, 255),
+    rgb(35, 234, 245),
+    rgb(249, 7, 212),
+    rgb(253, 36, 113)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.copyright {
+  /* background-image: linear-gradient(
+    to right,
+     rgb(0, 208, 255),
+    rgb(35, 234, 245),
+    rgb(249, 7, 212),
+    rgb(253, 36, 113)
+  ); */
+
+  color: transparent;
+}
