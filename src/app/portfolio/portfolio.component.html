@@ -1,4 +1,4 @@
-<section id="portfolio" class="portfolio bg-body-secondary py-5 mt-3">
+<!-- <section id="portfolio" class="portfolio bg-body-secondary py-5 mt-3">
 
     <div class="container pt-5">
         <div class="header text-center">
@@ -82,6 +82,52 @@
                     </a>
                 </div>
             </div>
+        </div>
+
+    </div>
+
+
+</section> -->
+
+
+<section id="portfolio" class="portfolio bg-body-secondary py-5">
+
+    <div class="container pt-5">
+        <div class="header text-center">
+            <p class="h1 mb-2">OUR PRODUCT</p>
+            <div class=" star position-relative d-inline-block">
+                <i class="str fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="row g-3">
+            @for (src of imgsrc; track $index) {
+
+            <div class="col-md-6  col-lg-4 px-4 ">
+                <div class="card border-1 border-danger h-100 rounded-2 overflow-hidden mt-3  ">
+                    <div (click)="ishiden=false ;currentsrc=src" class="card-img position-relative overflow-hidden">
+                        <div class="w-100"><img [src]="src" class="w-100  rounded-2" [alt]="src">
+                        </div>
+
+                        <div
+                            class="over-layer position-absolute  top-0 start-0 h-100 w-100 d-flex justify-content-center align-items-center bg-black bg-opacity-50">
+                            <i class=" fa fa-search-plus fa-2x text-white"> Zo o m</i>
+                        </div>
+                    </div>
+
+                    <div class="card-body  px-3 pb-1 pt-2">
+                        <h4 class="card-title">T-shiRt</h4>
+                        <p class="p-0 m-0 card-text">PRICE: <span class="text-danger">750</span> LE</p>
+                        <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt aliquam nulla
+                            u</p>
+                    </div>
+                </div>
+
+            </div>
+            }
+        </div>
+        <div (click)="hideModel($event.target,elmImg)" [class.d-none]="ishiden"
+            class="fixid bg-black bg-opacity-50 fixed-top bottom-0 d-flex justify-content-center align-items-center ">
+            <img #elmImg [src]="currentsrc" alt="Designed">
         </div>
 
     </div>
